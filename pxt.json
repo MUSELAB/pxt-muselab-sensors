@@ -1,0 +1,28 @@
+{
+    "name": "pxt-muselab-sensors",
+    "version": "1.0.0",
+    "description": "Sensors Plugin for MuseIoT using muselab products in PXT",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "minode.ts",
+        "libs/MiNode.h",
+        "libs/MiNodeComponent.h",
+        "libs/MiNodeComponent.cpp",
+        "libs/MiNodeConn.h",
+        "libs/MiNodeConn.cpp",
+        "libs/MiNodeDHT11.cpp",
+        "libs/MiNodeDHT11.h",
+        "libs/minode.cpp",
+        "shims.d.ts",
+        "enums.ts",
+        "enums.d.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
