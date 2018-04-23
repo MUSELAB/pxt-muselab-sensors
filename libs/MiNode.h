@@ -8,7 +8,16 @@
 #include "MicroBitEvent.h"
 #include "MiNodeConn.h"
 #include "MiNodeComponent.h"
+#include "MiNodeIO.h"
+#include "MiNodeModulePool.h"
+#include "MiNodeRGB.h"
 #include "MiNodeDHT11.h"
+#include "MiNodeSwitch.h"
+#include "MiNodeRotary.h"
+#include "MiNodePIR.h"
+#include "MiNodeMIC.h"
+#include "MiNodeLightSensor.h"
+#include "MiNodeFan.h"
 
 class MiNode
 {
@@ -25,7 +34,15 @@ public:
 
   }
 
+  MiNodeIO io;
+  MiNodeModulePool<MiNodeRGB>      rgb;
   MiNodeModulePool<MiNodeDHT>      dht11;
+  MiNodeModulePool<MiNodeSwitch>   switches;
+  MiNodeModulePool<MiNodeRotary>   rotary;
+  MiNodeModulePool<MiNodePIR>      pir;
+  MiNodeModulePool<MiNodeMIC>      mic;
+  MiNodeModulePool<MiNodeLight>    light;
+  MiNodeModulePool<MiNodeFan>      fan;
 
 };
 
