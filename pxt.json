@@ -8,7 +8,7 @@
     },
     "files": [
         "README.md",
-        "minode.ts",
+        "MuseSensor.ts",
         "libs/MiNode.h",
         "libs/MiNodeComponent.h",
         "libs/MiNodeComponent.cpp",
@@ -16,7 +16,7 @@
         "libs/MiNodeConn.cpp",
         "libs/MiNodeDHT11.cpp",
         "libs/MiNodeDHT11.h",
-        "libs/minode.cpp",
+        "libs/MuseSensor.cpp",
         "shims.d.ts",
         "enums.ts",
         "enums.d.ts"

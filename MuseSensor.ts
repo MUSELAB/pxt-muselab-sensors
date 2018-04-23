@@ -8,7 +8,7 @@ namespace MuseSensor {
      * Get pinname
      */
     //% blockId=get_pin_name
-    //% shim=minode::getPin
+    //% shim=MuseSensor::getPin
     export function getPin(connName: ConnName): number{
       return 0;
     }
@@ -17,7 +17,7 @@ namespace MuseSensor {
      * Get analog pinname
      */
     //% blockId=get_analog_pin_name
-    //% shim=minode::getanalogPin
+    //% shim=MuseSensor::getanalogPin
     export function getanalogPin(connName: AnalogConnName): number{
       return 0;
     }
@@ -26,7 +26,7 @@ namespace MuseSensor {
      * Get Pin Property
      */
     //% blockId=get_pin_property
-    //% shim=minode::getPinProperty
+    //% shim=MuseSensor::getPinProperty
     export function getPinProperty(connName: ConnName): number{
       return 0;
     }
@@ -34,9 +34,9 @@ namespace MuseSensor {
     /**
      * Get DHT11 temperature (celsius or fahrenheit).
      */
-    //% blockId=minode_dht_get_temperature 
+    //% blockId=MuseSensor_dht_get_temperature 
     //% block="dht11 %connName| tempreature %FanStatus" 
-	//% shim=minode::DHTGetTemperature
+	//% shim=MuseSensor::DHTGetTemperature
 	//% weight=85	
     export function DHTGetTemperature(connName: ConnName, style: DHTTemStyle): number{
       return 0;
@@ -45,9 +45,9 @@ namespace MuseSensor {
     /**
      * Get DHT11 Humidity.
      */
-    //% blockId=minode_dht_get_humidity 
+    //% blockId=MuseSensor_dht_get_humidity 
 	//% block="dht11 %connName| humidity"
-    //% shim=minode::DHTGetHumidity
+    //% shim=MuseSensor::DHTGetHumidity
 	//% weight=80	
     export function DHTGetHumidity(connName: ConnName): number{
       return 0;
@@ -56,9 +56,9 @@ namespace MuseSensor {
     /**
      * Do something when DHT11 temperature change.
      */
-    //% blockId=minode_on_dhttemperature_change 
+    //% blockId=MuseSensor_on_dhttemperature_change 
 	//% block="dht11 %connName| on temperature change"
-    //% shim=minode::onDHTEvent
+    //% shim=MuseSensor::onDHTEvent
 	//% weight=90	
     export function onDHTEvent(connName: ConnName, body: () => void): void{
     	return;
